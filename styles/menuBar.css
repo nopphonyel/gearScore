@@ -1,0 +1,43 @@
+
+ul {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #30a5ae;
+}
+
+.wrap {
+    width: 970;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li {
+    text-decoration: none;
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.5s;
+}
+
+li a:hover {
+    background-color: #111;
+    transform: scale(1.1);
+    color: white;
+    text-decoration: none;
+}
+

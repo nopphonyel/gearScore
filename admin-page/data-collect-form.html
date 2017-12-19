@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8";>
+    <link rel="stylesheet" href="css/data-collect-form.css">
+    <script type="text/javascript" src="jquery-1.5.js"></script>
+</head>
+<body>
+
+
+<div class="dropdown" >
+<button onclick="myFunction()" class="dropbtn" id="drop1">บันทึกผลการแข่งขัน</button>
+  <div id="myDropdown" class="dropdown-sports" name="mydrop1">
+    <a href="sports/running.php">กรีฑา</a>
+    <a href="sports/football.php">ฟุตบอล</a>
+    <a href="sports/futsal.php">ฟุตซอล</a>
+    <a href="sports/basketball.php">บาสเก็ตบอล</a>
+    <a href="sports/petanque.php">เปตอง</a>
+    <a href="sports/softball.php">ซอฟต์บอล</a>
+    <a href="sports/tabletennis.php">เทเบิลเทนนิส</a>
+    <a href="sports/tennis.php">เทนนิส</a>
+    <a href="sports/rugby.php">รักบี้</a>
+    <a href="sports/takraw.php">ตะกร้อ</a>
+    <a href="sports/swimming.php">ว่ายน้ำ</a>
+    <a href="sports/valleyball.php">วอลเลย์บอล</a>
+  </div>
+<button onclick="myFunction2()" class="dropbtn" id="drop2">บันทึกผลเหรียญรางวัล</button>
+  <div id="myDropdown2" class="dropdown-medals" name="mydrop2">
+    <a href="medals/football-medal.php">ฟุตบอล</a>
+    <a href="medals/futsal-medal.php">ฟุตซอล</a>
+    <a href="medals/basketball-medal.php">บาสเก็ตบอล</a>
+    <a href="medals/petanque-medal.php">เปตอง</a>
+    <a href="medals/softball-medal.php">ซอฟต์บอล</a>
+    <a href="medals/tabletennis-medal.php">เทเบิลเทนนิส</a>
+    <a href="medals/tennis-medal.php">เทนนิส</a>
+    <a href="medals/rugby-medal.php">รักบี้</a>
+    <a href="medals/takraw-medal.php">ตะกร้อ</a>
+    <a href="medals/valleyball-medal.php">วอลเลย์บอล</a>
+  </div>    
+</div>
+    
+
+
+<script>
+  
+    
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+                    
+        }
+    
+        function myFunction2() {
+            document.getElementById("myDropdown2").classList.toggle("show");
+             
+        }
+        
+        
+        
+       
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('#drop1')) {
+
+            var dropdowns = document.getElementsByName("mydrop1");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+          if (!event.target.matches('#drop2')) {
+               
+            var dropdowns2 = document.getElementsByName("mydrop2");
+            var j;
+            for (j = 0; j < dropdowns2.length; j++) {
+              var openDropdown2 = dropdowns2[j];
+              if (openDropdown2.classList.contains('show')) {
+                openDropdown2.classList.remove('show');
+              }
+            }
+          } 
+        }
+</script>
+
+</body>
+</html>

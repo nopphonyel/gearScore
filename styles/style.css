@@ -1,0 +1,282 @@
+@font-face {
+    font-family: "MorKhor 1";
+    src: url("../fonts/MorKhor1.ttf");
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0px;
+    background-color: #ededed;
+    font-family: "MorKhor 1";
+    font-size: 18px;
+    line-height: 1.0;
+    height: 100%;
+    width: 100%;
+
+}
+
+.imagesize {
+    width: 20%;
+    height: 20%;
+}
+
+.clear {
+    clear: both;
+}
+
+.wrap {
+    position: relative;
+    width: 970px;
+    height: auto;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main_nav {
+   
+    font-size: 13px;
+    width: 100%;
+    height: 20px;
+    padding-top: 20px;
+    background-color: #30a5ae;
+    box-shadow: inset 0px 0px 20px #000000;
+}
+
+#main_nav a,
+#main_nav span,
+    {
+    color: #cecece;
+    font-size: 1.1em;
+    text-decoration: none;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: color 0.5s;
+}
+
+
+
+#main_nav_underline {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: #c6c6c6;
+    overflow: hidden;
+}
+
+#main_nav_underline div {
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), #FFFFFF, rgba(255, 255, 255, 0));
+    background: linear-gradient(left, rgba(0, 0, 0, 0), #FFFFFF, rgba(255, 255, 255, 0));
+    animation-name: underline;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes underline {
+    0% {
+        left: -200px;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+#main_header {
+    width: 100%;
+    height: 460px;
+    background-color: #ba2b2b;
+    background-image: url("../images/background-header.png");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+#mascot {
+    position: absolute;
+    top: -20px;
+    width: 300px;
+    height: 382px;
+    background-image: url('../images/mascot.png');
+}
+
+#mascot #mascot_ball {
+    position: absolute;
+    left: 67px;
+    top: 290px;
+    width: 62px;
+    height: 63px;
+    background-image: url('../images/mascot-ball.png');
+}
+
+#mascot #mascot_eye {
+    position: absolute;
+    left: 129px;
+    top: 101px;
+    width: 124px;
+    height: 72px;
+    background-repeat: no-repeat;
+}
+
+#mascot #mascot_rice {
+    width: 27px;
+    height: 22px;
+    background-image: url('../images/mascot-rice.png');
+    background-repeat: no-repeat;
+}
+
+#main_title {
+    position: absolute;
+    left: 320px;
+    top: 100px;
+    width: 620px;
+    height: 167px;
+}
+
+#main_title_foreground {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/main-title-foreground.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 1;
+}
+
+#main_title_background {
+    position: absolute;
+    left: 465px;
+    top: 9px;
+    width: 154px;
+    height: 154px;
+    background-image: url('../images/main-title-background.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 0;
+}
+
+
+#main_homepage {
+
+    position: absolute;
+    left: 540px;
+    top: 80px;
+    width: 350px;
+    height: 350px;
+    background-image: url('../images/logo_geargame.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 0;
+}
+
+#gear_homepage {
+    position: absolute;
+    left: 465px;
+    top: 9px;
+    width: 500px;
+    height: 500px;
+    background-image: url('../images/gear_homepage.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 0;
+}
+
+#main_body .wrap .main_body_left {
+    display: inline-block;
+    width: 700px;
+    height: auto;
+    margin-right: 10px;
+    float: left;
+}
+
+#main_body .wrap .main_body_right {
+    display: inline-block;
+    width: 260px;
+    height: auto;
+    float: right;
+}
+
+.announce_element {
+    width: 100%;
+    height: 150px;
+    background-color: #FFF;
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #d14641;
+    background-image: url('../images/thumbnail.jpg');
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+.announce_element .thumbnail {
+    width: 240px;
+    height: 150px;
+    float: left;
+}
+
+.announce_element .title {
+    padding-top: 5px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #d14641;
+    border-bottom: 2px solid #d14641;
+}
+
+.announce_element .body {
+    padding-top: 5px;
+    margin-right: 15px;
+    text-indent: 30px;
+}
+
+#footer {
+    margin-top: 350px;
+    border-top: 2px solid #626262;
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #272727;
+    color: #d4d4d4;
+    text-align: center;
+}
+
+#footer .footer_left {
+    float: left;
+}
+
+#footer .footer_left img {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+#footer .footer_left a {
+    color: #71a2ff;
+    text-decoration: none;
+}
+
+#footer .footer_right {
+    float: right;
+}
+
+#footer .footer_right img {
+    width: auto;
+    height: 80px;
+    opacity: 0.6;
+    transition: opacity 0.5s;
+}
+
+#footer .footer_right img:hover {
+    opacity: 1.0;
+}
+
+
+
+

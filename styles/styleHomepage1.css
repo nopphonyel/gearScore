@@ -1,0 +1,86 @@
+@font-face {
+    font-family:   "MorKhor 1";
+    src: url("../fonts/MorKhor1.ttf");
+}
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: "MorKhor 1";
+   background-image: url("../images/test.png");
+    background-size: 100% auto ;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-color: #30a5ae;
+}
+
+.button {
+    display: inline-block;
+    background-color: #6a6a6a;
+    border-radius: 6px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 2px solid #FFFFFF;
+    text-decoration: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    color: #ffffff;
+    transition: transform 0.5s;
+}
+.button:hover{
+    transform: scale(1.1);
+    color: white;
+    text-decoration: none;
+}
+.logo{
+    
+    position: relative;
+    top: 10px;
+    margin-left: auto; 
+    margin-right: auto; 
+    position: relative;   
+    width: 350px;
+    height: 350px;
+    background-image: url('../images/logo_geargame.png');
+    background-size: 225px 225px;
+    background-position: center center;
+    background-repeat: no-repeat
+}
+.gear{
+    position:relative;
+    width: 100%;
+    height: 100%;
+}
+.gear2{
+      position:relative;
+    width: 100%;
+    height: 100%;
+    
+}
+.gear3{
+      position:relative;
+    width: 100%;
+    height: 100%;
+    
+}
+.text-geargame{
+    text-align: center;
+    line-height: 0.8; 
+    font-size: 50px; 
+    font-weight: bold; 
+    line-height: 1;
+}
+.text-kku{
+    text-align: center; 
+    font-size: 30px; 
+    font-weight: bold;
+}
+
+

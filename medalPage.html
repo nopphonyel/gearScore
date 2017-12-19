@@ -1,0 +1,89 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles/menuBar.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/animation.css">
+        <link rel="stylesheet" href="styles/mobile.css">
+        <link rel="stylesheet" href="styles/animate.css">
+        <link rel="stylesheet" href="medalPage.css">
+        <link rel="stylesheet" href="smoothScroll.css">
+    
+        <script src="jquery-3.2.1.min.js"></script>
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <ul class="main_nav">
+           
+            <div class="wrap">
+                <li><a href="#home">PLACE</a></li>
+                <li style="background-color:grey; "><a href="medalPage.html"><div style="color:white">MEDAL</div></a></li>
+                <li><a href="#contact">SCORE</a></li>
+                <li><a href="competitionPage.html">HOME</a></li>
+            </div>
+            <div id="main_nav_underline">
+                <div></div>
+            </div>
+        </ul>
+
+
+<script>
+   $(document).ready(function() {
+    $.getJSON("http://www.geargame29.en.kku.ac.th/theInterface/api/v1/universities.php",function(data){
+        console.log(data[0].name);
+        console.log(data.length);
+            for(var i=0; i<data.length; i++){
+                if(i === 0){
+                    $("table").append("<tr class='first'><td style='background-color:midnightblue;'><div style='color:white;'>" + (i+1) + "</div></td><td id='universName'>" + data[i].name +"</td><td>" + data[i].gold +"</td><td>" + data[i].silver+"</td><td>" + data[i].bronze+"</td><td>"+data[i].total+"</td></tr>");
+                }else if(i === 1){
+                    $("table").append("<tr class='second'><td style='background-color:darkgoldenrod;'><div style='color:white;'>" + (i+1) + "</div></td><td id='universName'>" + data[i].name +"</td><td>" + data[i].gold +"</td><td>" + data[i].silver+"</td><td>" + data[i].bronze+"</td><td>"+data[i].total+"</td></tr>)");
+                }
+                else if(i === 2){
+                    $("table").append("<tr class='third'><td style='background-color:orange;'><div style='color:white;'>" + (i+1) + "</div></td><td id='universName'>" + data[i].name +"</td><td>" + data[i].gold +"</td><td>" + data[i].silver+"</td><td>" + data[i].bronze+"</td><td>"+data[i].total+"</td></tr>)");
+                }
+               else{
+                    $("table").append("<tr class='another'><td><div>" + (i+1) + "</div></td><td id='universName'>" + data[i].name +"</td><td>" + data[i].gold +"</td><td>" + data[i].silver+"</td><td>" + data[i].bronze+"</td><td>"+data[i].total+"</td></tr>)");
+                }
+
+                console.log(data[i].name);
+            }
+                   // txt += "<td>" + data.name + "</td>";
+
+                
+            //document.getElementById('first').innerHTML = txt;
+           // console.log(document.getElementById('first').innerHTML = txt);
+    });
+});
+</script>
+
+
+    <!-- setup our canvas element -->
+    <center>
+<div id = "page-wrap">
+        <table border = "0" id = "medalTable">
+            <tr>
+                <th class="flash" style="text-align: left; width: 40px;"><img src="images/crown.png" style="width: 30; height:30;"></th>
+                <th></th>
+                <th><img  src="images/gold-medal.png" style="width: 30; height:30;"></th>
+                <th><img src="images/silver-medal.png" style="width: 30; height:30;"></th>
+                <th><img src="images/bronze-medal.png" style="width: 30; height:30;"></th>
+                <th><img src="images/medal.png" style="width: 30; height:30;"></th>
+            </tr>
+            
+            
+
+
+    
+        </table>
+    
+
+
+    </div>
+</center>
+    </body>
+</html>

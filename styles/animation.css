@@ -1,0 +1,30 @@
+.fast_rotate_animation{
+    animation-name: rotate;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.slow_rotate_animation{
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.slow_movement_animation{
+    animation-name: movement;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate{
+    from {transform: rotate(0deg); }
+    to {transform: rotate(360deg); }
+}
+@keyframes movement{
+    0% { margin-top: 0px;}
+    25% { margin-top: -4px; }
+    50% { margin-top: 0px; }
+    75% { margin-top: 4px; }
+    100% { margin-top: 0px; }
+}

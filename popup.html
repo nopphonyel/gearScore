@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="dialog.css" />
+    <link rel="stylesheet" href="button.css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src=toggle_popup.js></script>
+</head>
+
+<body>
+
+    <div id="location1" class="buttonShowLocation" onclick="showDialog()"><i class="fa fa-map-marker" aria-hidden="true"></i> Location
+    </div>
+
+    <div class="dialog_layout">
+        <div id="map_dialog" class="dialog">
+            <h1 class="dialog_title">
+                <i class="fa fa-times-circle" aria-hidden="true" onclick="hideDialog()"></i> Location
+            </h1>
+            <div id="map"></div>
+        </div>
+    </div>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdUk99WDcld7A_iU5pQy2hATjtnp3m-Fc&callback=initMap">
+
+
+    </script>
+    <script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 16,
+                center: new google.maps.LatLng(16.476446, 102.813937)
+            });
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(16.476446, 102.813937),
+                map: map
+            });
+        }
+
+    </script>
+</body>
+
+</html>

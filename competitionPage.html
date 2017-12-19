@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles/menuBar.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/animation.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/animate.css">
+    <link rel="stylesheet" href="styles/dropdown.css">
+
+    <link rel="stylesheet" href="smoothscroll.css">
+    <script src =scrolling.js></script>
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="dialog.css" />
+    <link rel="stylesheet" href="button.css" />
+    <script src=toggle_popup.js></script>
+    <script src=dropdown.js></script>
+
+    <meta charset="UTF-8">
+    <title>GEAR GAME 29</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <ul class="main_nav">
+        <div class="wrap">
+            <li><a href="#home">PLACE</a></li>
+            <li><a href="medalPage.html">MEDAL</a></li>
+            <li><a href="#compe">SCORE</a></li>
+            <li style="background-color:grey; "><a href="competitionPage.html"><div style="color:white">HOME</div></a></li>
+        </div>
+        <div id="main_nav_underline">
+            <div></div>
+        </div>
+    </ul>
+
+    <div id="page-wrap">
+
+            <div id="compe">
+                <h1>Competition DAY:
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">26 ธันวาคม 2560</button>
+                        <div id="myDropdown" class="dropdown-content">
+                        <a href="#">26 ธันวาคม 2560</a>
+                        <a href="#">27 ธันวาคม 2560</a>
+                        <a href="#">28 ธันวาคม 2560</a>
+                        </div>
+                    </div>
+                </h1>
+            </div>
+           
+
+                <div class="tab-bar-logo" style="display: inline-block;">
+
+                    <div class="tabs-logo" style="display: inline-block;">
+                        <a href = "#football" >
+                        <img class="logo"    src="images/football.png" id="footballImg" >
+                        </a>
+                    </div>
+                    <div class = "tabs-logo" style="display: inline-block;">
+                        <a href = "#basketball" >
+                        <img class="logo"  src="images/basketball.png"  id="basketballImg">
+                        </a>
+                    </div>
+                    <div class="tabs-logo" style="display: inline-block;">
+                        <a href = "#volleyball">
+                        <img class="logo" src="images/volleyball.png" id="volleyImg">
+                        </a>
+                    </div>
+                    <div class="tabs-logo" style="display: inline-block;">
+                        <a href = "#swimming">
+                        <img class="logo" src="images/waterpolo.png" id="poloImg" >
+                        </a>
+                    </div>
+                    <div class="tabs-logo" style="display: inline-block;">
+                        <a href = "#athletics">
+                        <img class="logo" src="images/running.png" id="runImg" >
+                        </a>
+                    </div>
+                    <div class="tabs-logo" style="display: inline-block;">
+                        <a href = "#swim">
+                        <img class="logo" src="images/swimming.png" id="swimImg" >
+                        </a>
+                    </div>
+                    <div class="tabs-logo" style="display: inline-block;">
+                        <a href = "#badminton">
+                        <img class="logo" src="images/badminton.png" id="badImg" >
+                        </a>
+                    </div>
+                </div>
+            
+    
+       
+                <h1 id = "football">Football 
+                </h1>
+                <div>
+                    <table>
+                        <tr>
+                            <th>คู่ที่</th>
+                            <th>เวลา</th>
+                            <th>ระหว่าง</th>
+                            <th>ผลการแข่งขัน</th>
+                            <th>สถานที่การแข่งขัน</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td> 09.00 </td>
+                            <td style="text-align: left !important;">มหาวิทยาลัยขอนแก่น - จุฬาลงกรณ์มหาวิทยาลัย </td>
+                            <td>--:--</td>
+                            <td>    
+                                <a href="#" onclick="showDialog()">
+                                    <div id="location1" class="buttonShowLocation" onclick="showDialog('Central Stadium สนามกีฬากลาง')">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i> Location
+                                    </div>
+                                        </a></td>
+                        </tr>
+
+                    </table>
+                </div>
+               
+
+                <h1 id = "basketball">Basketball 
+                    
+                    </h1>
+                    <div>
+                        <table>
+                            <tr>
+                                <th>คู่ที่</th>
+                                <th>ประเภท</th>
+                                <th>กลุ่ม</th>
+                                <th>เวลา</th>
+                                <th>ระหว่าง</th>
+                                <th>ผลการแข่งขัน</th>
+                                <th>สถานที่การแข่งขัน</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>ชาย</td>
+                                <td>A</td>
+                                <td> 09.00 </td>
+                                <td style="text-align: left !important;">มหาวิทยาลัยขอนแก่น - จุฬาลงกรณ์มหาวิทยาลัย </td>
+                                <td>--:--</td>
+                                <td> 
+                                <a href="#" onclick="showDialog()">
+                                        <div id="location1" class="buttonShowLocation" onclick="showDialog('กองอำนวยการกีฬา')">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i> Location
+                                        </div>
+                                            </a></td>
+                            </tr>
+                        </table>
+                    </div>
+
+
+                    <h1 id = "futsal">Futsal
+                            </h1>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <th>คู่ที่</th>
+                                        <th>เวลา</th>
+                                        <th>ระหว่าง</th>
+                                        <th>ผลการแข่งขัน</th>
+                                        <th>สถานที่การแข่งขัน</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td> 09.00 </td>
+                                        <td style="text-align: left !important;">มหาวิทยาลัยขอนแก่น - จุฬาลงกรณ์มหาวิทยาลัย </td>
+                                        <td>--:--</td>
+                                        <td> 
+                                        <a href="#" onclick="showDialog()">
+                                                <div id="location1" class="buttonShowLocation" onclick="showDialog('อาคารพลศึกษา')">
+                                                <i class="fa fa-map-marker" aria-hidden="true"></i> Location
+                                                </div>
+                                                    </a></td>
+                                    </tr>
+                                </table>
+                            </div>
+
+
+                    <h1 id = "volleyball">Volleyball 
+                        
+                        </h1>
+                        <div>
+                            <table>
+                                <tr>
+                                    <th>คู่ที่</th>
+                                    <th>เวลา</th>
+                                    <th>ระหว่าง</th>
+                                    <th>ผลการแข่งขัน</th>
+                                    <th>สถานที่การแข่งขัน</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td> 09.00 </td>
+                                    <td style="text-align: left !important;">มหาวิทยาลัยขอนแก่น - จุฬาลงกรณ์มหาวิทยาลัย </td>
+                                    <td>--:--</td>
+                                    <td> 
+                                    <a href="#" onclick="showDialog()">
+                                            <div id="location1" class="buttonShowLocation" onclick="showDialog('อาคารพลศึกษา')">
+                                            <i class="fa fa-map-marker" aria-hidden="true"></i> Location
+                                            </div>
+                                                </a></td>
+                                </tr>
+                            </table>
+                        </div>
+               
+
+                            <h1 id = "softball">Softball 
+                                    </h1>
+                                    <div>
+                                        <table>
+                                            <tr>
+                                                <th>คู่ที่</th>
+                                                <th>สาย</th>
+                                                <th>เวลา</th>
+                                                <th>ระหว่าง</th>
+                                                <th>ผลการแข่งขัน</th>
+                                                <th>สถานที่การแข่งขัน</th>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>A</td>
+                                                <td> 09.00 </td>
+                                                <td style="text-align: left !important;">มหาวิทยาลัยขอนแก่น - จุฬาลงกรณ์มหาวิทยาลัย </td>
+                                                <td>--:--</td>
+                                                <td> 
+                                                <a href="#" onclick="showDialog()">
+                                                        <div id="location1" class="buttonShowLocation" onclick="showDialog('16.479475, 102.820816')">
+                                                        <i class="fa fa-map-marker" aria-hidden="true"></i> Location
+                                                        </div>
+                                                            </a></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                           
+
+                                        <h1 id = "pentanque">Petanque 
+                                            </h1>
+                                            <div>
+                                                <table>
+                                                    <tr>
+                                                        <th>คู่ที่</th>
+                                                        <th>ประเภท</th>
+                                                        <th>เวลา</th>
+                                                        <th>ระหว่าง</th>
+                                                        <th>ผลการแข่งขัน</th>
+                                                        <th>สถานที่การแข่งขัน</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>ชายสาม</td>
+                                                        <td> 09.00 </td>
+                                                        <td style="text-align: left !important;">มหาวิทยาลัยขอนแก่น - จุฬาลงกรณ์มหาวิทยาลัย </td>
+                                                        <td>--:--</td>
+                                                        <td> 
+                                                        <a href="#" onclick="showDialog()">
+                                                                <div id="location1" class="buttonShowLocation" onclick="showDialog('16.476286, 102.819153')">
+                                                                <i class="fa fa-map-marker" aria-hidden="true"></i> Location
+                                                                </div>
+                                                                    </a></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                <h1 id = "athletics">Athletics 
+                                    </h1>
+                                    <div>
+                                        <table>
+                                            <tr>
+                                                <th>คู่ที่</th>
+                                                <th>เวลา</th>
+                                                <th>ระหว่าง</th>
+                                                <th>ผลการแข่งขัน</th>
+                                                <th>สถานที่การแข่งขัน</th>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td> 09.00 </td>
+                                                <td style="text-align: left !important;">มหาวิทยาลัยขอนแก่น - จุฬาลงกรณ์มหาวิทยาลัย </td>
+                                                <td>--:--</td>
+                                                <td> 
+                                                <a href="#" onclick="showDialog()">
+                                                        <div id="location1" class="buttonShowLocation" onclick="showDialog('Central Stadium สนามกีฬากลาง')">
+                                                        <i class="fa fa-map-marker" aria-hidden="true"></i> Location
+                                                        </div>
+                                                            </a></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+
+                                        <h1 id = "rugby">Rugby
+                                            </h1>
+                                            <div>
+                                                <table>
+                                                    <tr>
+                                                        <th>คู่ที่</th>
+                                                        <th>เวลา</th>
+                                                        <th>ระหว่าง</th>
+                                                        <th>ผลการแข่งขัน</th>
+                                                        <th>สถานที่การแข่งขัน</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td> 09.00 </td>
+                                                        <td style="text-align: left !important;">มหาวิทยาลัยขอนแก่น - จุฬาลงกรณ์มหาวิทยาลัย </td>
+                                                        <td>--:--</td>
+                                                        <td> 
+                                                        <a href="#" onclick="showDialog()">
+                                                                <div id="location1" class="buttonShowLocation" onclick="showDialog('สนามรักบี้้ ตำบล ศิลา อำเภอเมืองขอนแก่น ขอนแก่น')">
+                                                                <i class="fa fa-map-marker" aria-hidden="true"></i> Location
+                                                                </div>
+                                                                    </a></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                   
+                                                <h1 id = "tennis">Tennis 
+                                                    </h1>
+                                                    <div>
+                                                        <table>
+                                                            <tr>
+                                                                <th>คู่ที่</th>
+                                                                <th>ประเภท</th>
+                                                                <th>เวลา</th>
+                                                                <th>ระหว่าง</th>
+                                                                <th>ผลการแข่งขัน</th>
+                                                                <th>สถานที่การแข่งขัน</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>ชายเดี่ยว</td>
+                                                                <td> 09.00 </td>
+                                                                <td style="text-align: left !important;">มหาวิทยาลัยขอนแก่น - จุฬาลงกรณ์มหาวิทยาลัย </td>
+                                                                <td>--:--</td>
+                                                                <td> 
+                                                                <a href="#" onclick="showDialog('16.476286, 102.819153')">
+                                                                        <div id="location1" class="buttonShowLocation" onclick="showDialog()">
+                                                                        <i class="fa fa-map-marker" aria-hidden="true"></i> Location
+                                                                        </div>
+                                                                            </a></td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                           
+                                                <h1 id = "tabletennis">Table tennis 
+                                                    </h1>
+                                                    <div>
+                                                        <table>
+                                                            <tr>
+                                                                <th>คู่ที่</th>
+                                                                <th>ประเภท</th>
+                                                                <th>เวลา</th>
+                                                                <th>ระหว่าง</th>
+                                                                <th>ผลการแข่งขัน</th>
+                                                                <th>สถานที่การแข่งขัน</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>ชายเดี่ยว</td>
+                                                                <td> 09.00 </td>
+                                                                <td style="text-align: left !important;">มหาวิทยาลัยขอนแก่น - จุฬาลงกรณ์มหาวิทยาลัย </td>
+                                                                <td>--:--</td>
+                                                                <td>
+                                                                        <a href="#" onclick="showDialog('โรงยิมเทเบิลเทนนิส เทศบาลนครขอนแก่น อำเภอเมืองขอนแก่น ขอนแก่น')">
+                                                                    <div id="location1" class="buttonShowLocation" onclick="showDialog()">
+                                                                    <i class="fa fa-map-marker" aria-hidden="true"></i> Location
+                                                                    </div>
+                                                                        </a></td>
+                                                            </tr>
+
+                                                        </table>
+                                                    </div>
+                                           
+                                              
+                                                        <h1 id = "sepaktakraw">Sepak Takraw 
+                                                        </h1>
+                                                        <div>
+                                                            <table>
+                                                                <tr>
+                                                                    <th>คู่ที่</th>
+                                                                    <th>ประเภท</th>
+                                                                    <th>เวลา</th>
+                                                                    <th>ระหว่าง</th>
+                                                                    <th>ผลการแข่งขัน</th>
+                                                                    <th>สถานที่การแข่งขัน</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>ชาเดี่ยว</td>
+                                                                    <td> 09.00 </td>
+                                                                    <td style="text-align: left !important;">มหาวิทยาลัยขอนแก่น - จุฬาลงกรณ์มหาวิทยาลัย </td>
+                                                                    <td>--:--</td>
+                                                                    <td>
+                                                                        <a href="#" onclick="showDialog('16.476321, 102.816435')">
+                                                                        <div id="location1" class="buttonShowLocation" >
+                                                                        <i class="fa fa-map-marker" aria-hidden="true"></i> Location
+                                                                        </div>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+
+                                    <h1 id = "badminton">Badminton 
+                                    </h1>
+                                    <div>
+                                        <table>
+                                            <tr>
+                                                <th>คู่ที่</th>
+                                                <th>ประเภท</th>
+                                                <th>เวลา</th>
+                                                <th>ระหว่าง</th>
+                                                <th>ผลการแข่งขัน</th>
+                                                <th>สถานที่การแข่งขัน</th>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>ชาเดี่ยว</td>
+                                                <td> 09.00 </td>
+                                                <td style="text-align: left !important;">มหาวิทยาลัยขอนแก่น - จุฬาลงกรณ์มหาวิทยาลัย </td>
+                                                <td>--:--</td>
+                                                <td>
+                                                    <a href="#" onclick="showDialog('กองอำนวยการกีฬา')">
+                                                    <div id="location1" class="buttonShowLocation" >
+                                                    <i class="fa fa-map-marker" aria-hidden="true"></i> Location
+                                                    </div>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                     <h1 id = "swimming">Swimming
+                                            </h1>
+                                            <div>
+                                                <table>
+                                                    <tr>
+                                                        <th>รายการที่</th>
+                                                        <th>เวลา</th>
+                                                        <th>รายการแข่งขัน</th>
+                                                        <th>ประเภท</th>
+                                                        <th>ผู้แข่งขัน</th>
+                                                        <th>ผลการแข่งขัน</th>
+                                                        <th>สถานที่การแข่งขัน</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td> 09.00 </td>
+                                                        <td>เดี่ยวผสม 200 เมตร</td>
+                                                        <td>ชาย</td>
+                                                        <td style="text-align: left !important;">ชื่อผู้เข้าร่วมการแข่งขัน </td>
+                                                        <td>ใครชนะ</td>
+                                                        <td>
+                                                                <a href="#" onclick="showDialog('สระว่ายน้ำชนเห็นชอบ')">
+                                                                <div id="location1" class="buttonShowLocation">
+                                                            <i class="fa fa-map-marker" aria-hidden="true"></i> Location
+                                                            </div>
+                                                                </a></td>
+                                                    </tr>
+
+                                                </table>
+                                            </div>
+                                   
+                                                <div class="dialog_layout">
+                                                    <div id="map_dialog" class="dialog">
+                                                        <h1 class="dialog_title">
+                                                           <a href="#"  onclick="hideDialog()"><img style="width: 20px; height:20px;" src="../ProjectXML/images/cancel.png" ></a>    Location
+                                                        </h1>
+                                                        <iframe id="map"
+                                                        width="600"
+                                                        height="450"
+                                                        frameborder="0" style="border:0"
+                                                        allowfullscreen>
+                                                      </iframe>
+                                                    </div>
+                                                </div>
+
+
+
+</div>
+</body>
+
+</html>

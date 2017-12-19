@@ -1,0 +1,9 @@
+.buttonShowLocation{
+    font-family: "Arial", "Gadget", "sans-serif";
+    display: inline-block;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: #339923;
+    box-shadow: 0px 5px 10px #c9c9c9;
+    color: #ffffff;
+}

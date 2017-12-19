@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "MorKhor 1";
+    src: url("../fonts/MorKhor1.ttf");
+}
+
+
+
+body {
+    margin: 0px;
+    background-color: #FFFFFF;
+    font-family: "MorKhor 1";
+    font-size: 18px;
+    line-height: 1.0;
+    height: 100%;
+    width: 100%;
+
+
+
+}
+
+
+h1 {
+    text-align: left;
+    margin-top: 50px !important;
+    margin-left: 10px;
+}
+
+.tabs {
+    text-align:center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.logo{
+    width: 170px;
+    height: 170px;
+    transition: transform 0.01s;
+
+}
+.logo:hover{
+    transform: scale(1.1);
+    color: white;
+    text-decoration: none;
+}
+
+.tabs li {
+    display: inline-block;
+    padding: 30px 25px;
+    background: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.tabs li.current {
+    background: #e9e9e9;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+}
+th{
+    text-align: center !important;
+}
+
+
